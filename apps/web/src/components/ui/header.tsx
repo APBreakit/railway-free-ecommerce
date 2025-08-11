@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Search, ShoppingCart, User } from 'lucide-react'
 import type { Locale } from '@/i18n/locales'
 import type { Dictionary } from '@/i18n/get-dictionary'
 
@@ -9,61 +10,55 @@ type Props = {
 
 export function Header({ locale, dict }: Props) {
   return (
-    <header className="border-b border-neutral-light bg-white">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href={`/${locale}`} className="text-xl font-semibold text-neutral-dark">
+    <header className="border-b border-neutral-200 bg-white sticky top-0 z-50">
+      <div className="container flex h-20 items-center justify-between">
+        <Link href={`/${locale}`} className="text-2xl font-bold text-gray-800">
           All Natural
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-10 text-lg">
           <Link 
             href={`/${locale}`}
-            className="text-neutral-dark hover:text-brand-primary transition-colors"
+            className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.home}
           </Link>
           <Link 
             href={`/${locale}/products`}
-            className="text-neutral-dark hover:text-brand-primary transition-colors"
+            className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.products}
           </Link>
           <Link 
             href={`/${locale}/collections`}
-            className="text-neutral-dark hover:text-brand-primary transition-colors"
+            className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.collections}
           </Link>
           <Link 
             href={`/${locale}/about`}
-            className="text-neutral-dark hover:text-brand-primary transition-colors"
+            className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.about}
           </Link>
           <Link 
             href={`/${locale}/contact`}
-            className="text-neutral-dark hover:text-brand-primary transition-colors"
+            className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.contact}
           </Link>
         </nav>
 
-        <div className="flex items-center space-x-4">
-          {/* Language switcher */}
-          <div className="flex items-center space-x-2">
-            <Link 
-              href="/pl" 
-              className={`px-2 py-1 text-sm rounded ${locale === 'pl' ? 'bg-brand-primary text-white' : 'text-neutral-dark hover:bg-neutral-light'}`}
-            >
-              PL
-            </Link>
-            <Link 
-              href="/en"
-              className={`px-2 py-1 text-sm rounded ${locale === 'en' ? 'bg-brand-primary text-white' : 'text-neutral-dark hover:bg-neutral-light'}`}
-            >
-              EN
-            </Link>
-          </div>
+        <div className="flex items-center space-x-6">
+          <button className="text-gray-600 hover:text-pink-500 transition-colors">
+            <Search className="h-6 w-6" />
+          </button>
+          <button className="text-gray-600 hover:text-pink-500 transition-colors">
+            <User className="h-6 w-6" />
+          </button>
+          <button className="text-gray-600 hover:text-pink-500 transition-colors">
+            <ShoppingCart className="h-6 w-6" />
+          </button>
         </div>
       </div>
     </header>
