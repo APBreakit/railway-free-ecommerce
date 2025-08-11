@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -25,6 +26,12 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.ico' }
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return children
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  )
 }

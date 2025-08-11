@@ -12,37 +12,37 @@ export function Header({ locale, dict }: Props) {
   return (
     <header className="border-b border-neutral-200 bg-white sticky top-0 z-50">
       <div className="container flex h-20 items-center justify-between">
-        <Link href={`/${locale}`} className="text-2xl font-bold text-gray-800">
+        <Link href={`/${locale}` as any} className="text-2xl font-bold text-gray-800">
           All Natural
         </Link>
         
         <nav className="hidden md:flex items-center space-x-10 text-lg">
           <Link 
-            href={`/${locale}`}
+            href={`/${locale}` as any}
             className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.home}
           </Link>
           <Link 
-            href={`/${locale}/products`}
+            href={`/${locale}/products` as any}
             className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.products}
           </Link>
           <Link 
-            href={`/${locale}/collections`}
+            href={`/${locale}/collections` as any}
             className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.collections}
           </Link>
           <Link 
-            href={`/${locale}/about`}
+            href={`/${locale}/about` as any}
             className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.about}
           </Link>
           <Link 
-            href={`/${locale}/contact`}
+            href={`/${locale}/contact` as any}
             className="text-gray-600 hover:text-pink-500 transition-colors duration-300"
           >
             {dict.nav.contact}

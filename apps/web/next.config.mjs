@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
   experimental: {
-    typedRoutes: true,
+    // typedRoutes: true, // Wyłączony - powoduje konflikty z i18n routing
   },
   images: {
     formats: ['image/avif', 'image/webp'],
