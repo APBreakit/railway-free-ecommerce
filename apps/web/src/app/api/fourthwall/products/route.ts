@@ -20,7 +20,7 @@ export async function GET(req: Request) {
     const apiUrl = new URL(`${base.replace(/\/$/, '')}/products`)
 
     // Whitelist dozwolonych parametrów
-    const allowedParams = new Set(['page', 'limit', 'locale', 'q'])
+    const allowedParams = new Set(['page', 'limit', 'locale', 'q', 'min', 'max', 'category', 'sort'])
     for (const [key, value] of incomingUrl.searchParams.entries()) {
       if (allowedParams.has(key)) apiUrl.searchParams.set(key, value)
     }

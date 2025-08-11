@@ -18,6 +18,19 @@
       "ctaText": "View Collections"
     }
   },
+  "products": {
+    "title": "Products",
+    "filters": {
+      "searchPlaceholder": "Search products...",
+      "minPlaceholder": "Min price",
+      "maxPlaceholder": "Max price"
+    },
+    "empty": "No products found.",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    }
+  },
   "footer": {
     "copyright": "© 2024 All Natural. All rights reserved.",
     "links": {
