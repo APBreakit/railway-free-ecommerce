@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "All Natural – E-commerce",
+    "siteName": "All Natural",
+    "description": "Naturalne produkty pielęgnacyjne – All Natural"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "products": "Produkty",
+    "collections": "Kolekcje",
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "All Natural",
+      "description": "Naturalne produkty pielęgnacyjne w ciepłych, ziemistych tonach – pewność jakości i prostoty.",
+      "ctaText": "Zobacz kolekcje"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 All Natural. Wszelkie prawa zastrzeżone.",
+    "links": {
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "returns": "Zwroty"
+    }
+  }
+}

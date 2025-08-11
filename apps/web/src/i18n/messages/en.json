@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "All Natural – E-commerce",
+    "siteName": "All Natural",
+    "description": "Natural skincare products – All Natural"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "collections": "Collections",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "All Natural",
+      "description": "Natural skincare products in warm, earthy tones – quality and simplicity guaranteed.",
+      "ctaText": "View Collections"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 All Natural. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "returns": "Returns"
+    }
+  }
+}
